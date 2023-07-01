@@ -5,13 +5,21 @@
   tasks:
 
   - name: remove image
-    command: docker rmi --force birdseyrk/serveruistatus:latest
+    command: docker rmi --force birdseyrk/activemqartemis 
     ignore_errors: yes
 
   - name: remove image
-    command: docker rmi --force serveruistatus:latest
+    command: docker rmi --force activemqartemis
     ignore_errors: yes
 
-  - name: remove prune image
-    command: docker image prune --force
+  - name: remove image
+    command: docker rmi --force birdseyrk/activemqartemis 
+    ignore_errors: yes
+
+  - name: remove image
+    command: docker rmi --force activemqartemis
+    ignore_errors: yes
+
+  - name: remove prune image 
+    command: docker image prune --force 
     ignore_errors: yes
