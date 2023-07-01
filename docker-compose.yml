@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-    myartemis:
-        build: artemis/
+    activemqartemis:
+        build: /local/docker/activemqartemis/container/
         ports:
             - 8161:8161
             # JMX Exporter
