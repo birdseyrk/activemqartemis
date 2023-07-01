@@ -1,0 +1,12 @@
+---
+
+- hosts: dockerhost
+
+  tasks:
+  - name: stop existing delpoyer-app
+    command: docker stop activemqartemis-app
+    ignore_errors: yes
+
+  - name: remove the activemqartemis-app
+    command: docker rm activemqartemis-app
+    ignore_errors: yes
