@@ -1,0 +1,7 @@
+---
+
+- hosts: dockerhost
+
+  tasks:
+  - name: create activemqartemis 
+    command: docker run -d --name activemqartemis-app -h server86   --ip 172.17.0.086  -p 8086:80 birdseyrk/activemqartemis:latest
