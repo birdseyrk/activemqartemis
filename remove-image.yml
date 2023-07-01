@@ -9,7 +9,7 @@
     ignore_errors: yes
 
   - name: remove image
-    command: docker rmi --force activemqartemis:latest
+    command: docker rmi --force birdseyrk/activemqartemis:latest
     ignore_errors: yes
 
   - name: remove prune image
