@@ -9,7 +9,7 @@
     ignore_errors: yes
 
   - name: remove image
-    command: docker rmi --force activemqartemis
+    command: docker rmi --force container_activemqartemis
     ignore_errors: yes
 
   - name: remove image
@@ -17,7 +17,7 @@
     ignore_errors: yes
 
   - name: remove image
-    command: docker rmi --force activemqartemis
+    command: docker rmi --force container_activemqartemis
     ignore_errors: yes
 
   - name: remove prune image 
