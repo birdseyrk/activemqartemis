@@ -4,4 +4,5 @@
 
   tasks:
   - name: create activemqartemis 
-    command: docker run -d --name activemqartemis-app -h server86   --ip 172.17.0.086  -p 8086:80 birdseyrk/activemqartemis:latest
+    #command: docker run -d --name activemqartemis-app -h server86   --ip 172.17.0.086  -p 8086:80 birdseyrk/activemqartemis:latest
+    command: docker run --rm -e AMQ_USER=myArtemis -e AMQ_PASSWORD=myArtemis -p 8161:8161 --name artemis birdseyrk/activemqartemis:latest
