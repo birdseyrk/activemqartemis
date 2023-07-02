@@ -6,4 +6,5 @@
   - name: create activemqartemis 
     #command: docker run -d --name activemqartemis-app -h server86   --ip 172.17.0.086  -p 8086:80 birdseyrk/activemqartemis:latest
     #command: docker run --rm -e AMQ_USER=myArtemis -e AMQ_PASSWORD=myArtemis -p 8161:8161 --name artemis birdseyrk/activemqartemis:latest
-    command: docker run -d --rm -e AMQ_USER=myArtemis -e AMQ_PASSWORD=myArtemis -p 8161:8161 --name artemis birdseyrk/activemqartemis:latest
+    command: docker run -d --rm -e AMQ_USER=myArtemis -e AMQ_PASSWORD=myArtemis -p 8161:8161 -p 9404:9404 -p 61616:61616 -p 5445:5455 -p 5672:5672 -p 1883:1883 -p 61613:61613 --name activemqartemis-app birdseyrk/activemqartemis:latest
+    
