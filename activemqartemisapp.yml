@@ -3,12 +3,14 @@
 
   tasks:
   - name: create node image
-    command: docker-compose build
+    #command: docker-compose build
+    command: docker build -t activemqartemis:latest .
     args:
      chdir: /local/docker/activemqartemis/container/
 
   - name: create tag to push image onto docker hub
-    command: docker tag container_activemqartemis:latest birdseyrk/activemqartemis:latest
+    #command: docker tag container_activemqartemis:latest birdseyrk/activemqartemis:latest
+    command: docker tag activemqartemis:latest birdseyrk/activemqartemis:latest
 
   - name: push docker image
     command: docker push birdseyrk/activemqartemis:latest
